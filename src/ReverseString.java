@@ -1,4 +1,4 @@
-//import java.lang.StringBuffer;
+import java.lang.StringBuffer;
 import java.util.*;
 public class ReverseString {
 
@@ -26,6 +26,7 @@ public class ReverseString {
 		System.out.println("Enter 3 to find your number's Factorial ");
 		System.out.println("Enter 4 to find if your number is an Amstrong Number ");
 		System.out.println("Enter 5 to find your array's minimum  ");
+		System.out.println("Enter 6 to find your string's reverse ");
 		int ch =s.nextInt();
 		
 		switch (ch) {
@@ -88,7 +89,15 @@ public class ReverseString {
 				     int find_min=Min_of_array(arr);
 				     System.out.println(find_min);
 					}
-			
+			case 6: {
+				System.out.println("Enter your string you want to reverse");
+				String str=s.next();
+				String rack=reverseStr(str);
+				System.out.println(rack);
+			}
+			default: {
+				System.out.println("Okay!!!Bye");
+			}
 			 s.close();
 		}
 	}
@@ -177,4 +186,11 @@ public class ReverseString {
 		}
 		return min;
 	}
+
+	public static String reverseStr(String str) {
+		
+		String mic = new StringBuffer(str).reverse().toString();
+		return mic;
+	}
+	
 }
