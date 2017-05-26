@@ -175,6 +175,8 @@ public class ReverseString {
 		 class_test e = new class_test();
 		 e.d=1;
 		 System.out.println(e.d);
+		 int k = e.array();
+		 System.out.println(k);
 			s.close();
 			in.close();
 	}
